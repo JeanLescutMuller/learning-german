@@ -1,0 +1,53 @@
+doc,page,section,aufgabe,content_class,description
+model_test,1,front,,metadata,Cover page: candidate name/DOB fields
+model_test,2,front,,metadata,Blank (page footer only)
+model_test,3,front,,metadata,Table of contents
+model_test,4,front,,metadata,Blank (page footer only)
+model_test,5,Hoeren,,section_header,'Hören / 4 Aufgaben / 15 Minuten'
+model_test,6,Hoeren,1,instructions,"Task framing: street conversation, read statements first"
+model_test,6,Hoeren,1,questions,4 richtig/falsch statements about the conversation
+model_test,6,Hoeren,1,answer_options,Richtig/Falsch checkboxes
+model_test,6,Hoeren,1,source_text,"AUDIO ONLY - see kde_modell_test_hoeren.mp3, transcription deferred"
+model_test,7,Hoeren,2,instructions,"Task framing: answering-machine message, read statements first"
+model_test,7,Hoeren,2,questions,3 richtig/falsch statements
+model_test,7,Hoeren,2,answer_options,Richtig/Falsch checkboxes
+model_test,7,Hoeren,2,source_text,"AUDIO ONLY - see kde_modell_test_hoeren.mp3, transcription deferred"
+model_test,8,Hoeren,3,instructions,"Task framing: radio announcement, read statements first"
+model_test,8,Hoeren,3,questions,3 richtig/falsch statements
+model_test,8,Hoeren,3,answer_options,Richtig/Falsch checkboxes
+model_test,8,Hoeren,3,source_text,"AUDIO ONLY - see kde_modell_test_hoeren.mp3, transcription deferred"
+model_test,9,Hoeren,4,instructions,Task framing: answering-machine message; explicitly flagged as Swiss German ('auf Schweizerdeutsch gesprochen')
+model_test,9,Hoeren,4,questions,3 richtig/falsch statements
+model_test,9,Hoeren,4,answer_options,Richtig/Falsch checkboxes
+model_test,9,Hoeren,4,source_text,"AUDIO ONLY, SWISS GERMAN - see kde_modell_test_hoeren.mp3, transcription deferred, flag uncertainty"
+model_test,10,Hoeren,,metadata,Blank (page footer only)
+model_test,11,Lesen,,section_header,'Lesen / 4 Aufgaben / 35 Minuten'
+model_test,12,Lesen,1,instructions,"Task framing: Sommerfest Fällanden, single correct answer per question"
+model_test,12,Lesen,1,questions,7 questions about the event programme
+model_test,12,Lesen,1,answer_options,3 multiple-choice options per question
+model_test,13,Lesen,1,source_text,Full event programme text (Sommerfest Fällanden)
+model_test,14,Lesen,2,instructions,Task framing: Tag der offenen Tür Stadtspital
+model_test,14,Lesen,2,questions,6 questions about the open-house announcement
+model_test,14,Lesen,2,answer_options,3 multiple-choice options per question
+model_test,15,Lesen,2,source_text,Full announcement text (Stadtspital open house)
+model_test,16,Lesen,3,instructions,Task framing: match 5 situations to 8 ads (3 ads unused)
+model_test,16,Lesen,3,questions,5 situations to match
+model_test,16,Lesen,3,answer_options,8 short ads A-H are the answer options (matching task)
+model_test,17,Lesen,3,source_text,8 short classified-ad style texts A-H (also functions as answer_options)
+model_test,18,Lesen,4,instructions,"Task framing: statements about voting/elections info, Ja/Nein"
+model_test,18,Lesen,4,questions,5 Ja/Nein statements
+model_test,18,Lesen,4,answer_options,Ja/Nein checkboxes
+model_test,19,Lesen,4,source_text,Structured info table: Wahlen/Abstimmungen (voting procedures/dates)
+model_test,20,Lesen,,metadata,Blank (page footer only)
+model_test,21,Schreiben,,section_header,'Schreiben / 1 Aufgabe / 25 Minuten'
+model_test,22,Schreiben,1,writing_prompt,"Write an invitation (Apéro) to colleagues; ~40 words, 3 required content points"
+model_test,23,Schreiben,1,response_area,Blank lines for candidate's own writing (no exam content)
+model_test,24,back,,metadata,"Grading/stamp page (Testanbieter, Korrektor/in, Datum)"
+answer_key,1,Hoeren,1,answer_key,Falsch/Richtig/Richtig/Falsch
+answer_key,1,Hoeren,2,answer_key,Falsch/Richtig/Falsch
+answer_key,1,Hoeren,3,answer_key,Falsch/Richtig/Richtig
+answer_key,1,Hoeren,4,answer_key,Falsch/Richtig/Richtig
+answer_key,2,Lesen,1,answer_key,2/1/2/3/1/2/3
+answer_key,2,Lesen,2,answer_key,1/2/1/1/2/3
+answer_key,2,Lesen,3,answer_key,D/F/B/C/H (situations 1-5)
+answer_key,2,Lesen,4,answer_key,Nein/Nein/Nein/Ja/Ja
