@@ -51,6 +51,9 @@ python src/build_lexical_table.py
 
 # Phase 4: generate the KDE lexical-difficulty coverage report
 python src/build_phase4_report.py
+
+# Export mutually exclusive CEFR study lists (A1 / A2-not-A1 / B1-not-A1-or-A2)
+python src/build_study_lists.py
 ```
 
 Re-downloading raw sources is not scripted yet (they were fetched once via
@@ -88,6 +91,23 @@ This is **not yet** the full schema specified in `CLAUDE.md` (no Swiss-public
 frequency, no compound-component breakdown, no multiword-expression handling,
 no receptive/productive priority scores) -- it's the first-slice join needed
 to answer the Phase 4 coverage questions.
+
+**Important:** the Goethe A1/A2/B1 `Wortlisten` are *cumulative*, not
+exclusive -- the official B1 list republishes A1 and A2 vocabulary too, so
+raw `goethe_a1`/`goethe_a2`/`goethe_b1` booleans overlap heavily (e.g. 298
+lemmas are flagged in all three). `derived_cefr_band` resolves this with the
+conservative rule from CLAUDE.md and is what should be used for CEFR-level
+analysis. Three flat, mutually exclusive study lists are exported from it by
+`src/build_study_lists.py`:
+
+- `data/processed/study_list_a1.csv` -- 746 lemmas (A1 base level)
+- `data/processed/study_list_a2_new.csv` -- 389 lemmas (A2, excluding A1)
+- `data/processed/study_list_b1_new.csv` -- 1,607 lemmas (B1, excluding A1 and A2)
+
+(255 further lemmas are `unclassified` -- present in the KDE test or the raw
+extraction but on none of the three Goethe lists; not exported as a separate
+file since it's just `lexical_table.csv` filtered to `derived_cefr_band ==
+"unclassified"`.)
 
 ## Key findings so far (see `reports/` for full detail and caveats)
 
